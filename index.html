@@ -1,35 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Telegram Login Test</title>
+    <title>Vite + React</title>
   </head>
   <body>
-    <h2>Telegram Login clean</h2>
-
-    <script>
-      // ✅ This will be called by Telegram after successful login
-      window.onTelegramAuth = function(user) {
-        console.log("✅ Telegram returned:", user);
-        alert("Logged in as " + user.first_name + " (ID: " + user.id + ")");
-      };
-
-      console.log("🚀 Telegram Login Test page loaded");
-
-      window.addEventListener("load", () => {
-        console.log("📡 Window loaded, Telegram widget should be visible.");
-      });
-    </script>
-
-    <!-- ✅ Telegram Login Button -->
-    <script
-      async
-      src="https://telegram.org/js/telegram-widget.js?22"
-      data-telegram-login="rishpalBot"
-      data-size="large"
-      data-onauth="onTelegramAuth(user)"
-      data-request-access="write">
-    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
