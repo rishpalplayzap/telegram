@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div style={{ maxWidth: 520, margin: "60px auto", fontFamily: "sans-serif" }}>
-      <h2>Telegram Login (React + Vite)</h2>
+      <h2>Telegram Login tested (React + Vite)</h2>
       {!me ? (
         <>
           <p>Click the Telegram button:</p>
