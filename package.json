@@ -4,10 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --port 2029 --host",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview --port 2029"
+    "dev": "vite",
+    "start": "npm run build && vite preview --port 2030",
+    "build": "vite build"
   },
   "dependencies": {
     "react": "^19.1.1",
