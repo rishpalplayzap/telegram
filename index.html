@@ -7,7 +7,12 @@
   </head>
   <body>
     <h2>Telegram Login Test (with Debug)</h2>
-
+    <script>
+      window.onTelegramAuth = function(user) {
+        console.log("✅ Telegram returned:", user);
+        alert("Logged in as " + user.first_name + " (ID: " + user.id + ")");
+      };
+    </script>
     <!-- Telegram Login Button -->
     <script
       async
